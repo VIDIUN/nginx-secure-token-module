@@ -1,4 +1,4 @@
-# Secure token module for Nginx [![Build Status](https://travis-ci.org/kaltura/nginx-secure-token-module.svg?branch=master)](https://travis-ci.org/kaltura/nginx-secure-token-module)
+# Secure token module for Nginx [![Build Status](https://travis-ci.org/vidiun/nginx-secure-token-module.svg?branch=master)](https://travis-ci.org/vidiun/nginx-secure-token-module)
 
 Generates CDN tokens, either as a cookie or as a query string parameter (m3u8,mpd,f4m only).
 Currently supports Akamai v2 tokens, and Amazon CloudFront tokens.
@@ -383,7 +383,7 @@ this enables the caching of the segments transparently by proxies.
 		
 	}
 ```
-Note: this configuration requires the module https://github.com/kaltura/nginx-akamai-token-validate-module
+Note: this configuration requires the module https://github.com/vidiun/nginx-akamai-token-validate-module
 in addition to nginx-secure-token-module
 
 ### Adding token security on top of an existing HDS/HLS live stream
@@ -412,7 +412,7 @@ in addition to nginx-secure-token-module
 	
 	}
 ```
-Note: this configuration requires the module https://github.com/kaltura/nginx-akamai-token-validate-module
+Note: this configuration requires the module https://github.com/vidiun/nginx-akamai-token-validate-module
 in addition to nginx-secure-token-module
 
 ### URI encryption
@@ -446,4 +446,4 @@ The module adds the following nginx variables:
 
 All code in this project is released under the [AGPLv3 license](http://www.gnu.org/licenses/agpl-3.0.html) unless a different license for a particular library is specified in the applicable library path. 
 
-Copyright © Kaltura Inc. All rights reserved.
+Copyright © Vidiun Inc. All rights reserved.

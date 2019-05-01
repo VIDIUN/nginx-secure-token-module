@@ -12,13 +12,13 @@ fi
 mkdir -p /tmp/builddir/nginx-$NGINX_VERSION
 cp -r . /tmp/builddir/nginx-$NGINX_VERSION/nginx-secure-token-module
 cd /tmp/builddir
-wget $NGINX_URI -O kaltura-nginx-$NGINX_VERSION.tar.gz
-tar zxvf kaltura-nginx-$NGINX_VERSION.tar.gz
+wget $NGINX_URI -O vidiun-nginx-$NGINX_VERSION.tar.gz
+tar zxvf vidiun-nginx-$NGINX_VERSION.tar.gz
 cd nginx-$NGINX_VERSION
 
-LD_LIBRARY_PATH=/opt/kaltura/ffmpeg-2.1.3/lib
-LIBRARY_PATH=/opt/kaltura/ffmpeg-2.1.3/lib
-C_INCLUDE_PATH=/opt/kaltura/ffmpeg-2.1.3/include
+LD_LIBRARY_PATH=/opt/vidiun/ffmpeg-2.1.3/lib
+LIBRARY_PATH=/opt/vidiun/ffmpeg-2.1.3/lib
+C_INCLUDE_PATH=/opt/vidiun/ffmpeg-2.1.3/include
 export LD_LIBRARY_PATH LIBRARY_PATH C_INCLUDE_PATH
 
 ./configure \
